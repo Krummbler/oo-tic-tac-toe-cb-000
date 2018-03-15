@@ -101,7 +101,7 @@ end
 
 def winner
   if over?
-    if !draw?
+    if won?
       winning_array = won?
       winning_spot = winning_array[0]
       winning_player = @board[winning_spot]
