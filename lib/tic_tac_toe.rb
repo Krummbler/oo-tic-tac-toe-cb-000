@@ -105,9 +105,9 @@ def winner
       winning_array = won?
       winning_spot = winning_array[0]
       winning_player = @board[winning_spot]
+    else
+      return nil
     end
-  else
-    return nil
   end
 end
 
