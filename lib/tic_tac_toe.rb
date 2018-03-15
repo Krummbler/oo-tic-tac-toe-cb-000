@@ -103,10 +103,7 @@ def winner
   if over?
     if won?
       winning_array = won?
-      winning_spot = winning_array[0]
-      winning_player = @board[winning_spot]
-    else
-      return nil
+      winning_player = @board[winning_array[0]]
     end
   end
 end
