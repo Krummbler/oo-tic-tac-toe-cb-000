@@ -101,10 +101,10 @@ end
 
 def winner
   if over?
-    if !draw?
+    if won?
       winning_array = won?
+      winning_player = @board[winning_array[0]]
     end
-    @board[winning_array[0]]
   end
 end
 
